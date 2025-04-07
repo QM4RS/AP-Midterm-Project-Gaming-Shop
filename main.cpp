@@ -10,6 +10,7 @@ Store globalStore;
 void adminMenu() {
     while (true) {
         clear_screen();
+        displayWelcomeScreen();
         set_color(ConsoleColor::BRIGHT_MAGENTA);
         cout << "[ Admin Panel ]\n";
         reset_color();
