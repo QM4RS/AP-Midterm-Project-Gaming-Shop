@@ -1,5 +1,6 @@
+#pragma once
 #include <vector>
-#include <include/Product.hpp>
+#include "Product.hpp"
 
 class Store {
 private:
@@ -16,4 +17,5 @@ public:
     void injectCapital(int amount);
     int getWalletBalance() const;
     int getTotalInventoryValue() const;
+    const std::vector<Product>& getProductList() const;
 };

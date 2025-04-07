@@ -69,3 +69,7 @@ int Store::getTotalInventoryValue() const {
     }
     return total;
 }
+
+const std::vector<Product>& Store::getProductList() const {
+    return products;
+}
