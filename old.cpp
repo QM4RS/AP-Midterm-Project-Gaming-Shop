@@ -22,7 +22,7 @@ struct CartItem {
 };
 
 // Global Variables
-string admin_password = "admin1admin";
+string admin_password = "admin1admin ";
 int store_wallet_balance = 0;
 int user_wallet_balance = 500;
 vector<Product> Products;
