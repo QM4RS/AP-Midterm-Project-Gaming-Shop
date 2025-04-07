@@ -1,11 +1,7 @@
 #include "../include/Utils.hpp"
 #include <iostream>
 #include <cctype>
-#ifdef _WIN32
 #include <windows.h>
-#else
-#include <unistd.h>
-#endif
 using namespace std;
 
 void set_color(ConsoleColor color) {
@@ -20,11 +16,7 @@ void reset_color() {
 }
 
 void clear_screen() {
-#ifdef _WIN32
     system("cls");
-#else
-    system("clear");
-#endif
 }
 
 void wait(int seconds) {

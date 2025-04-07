@@ -1,15 +1,16 @@
+#pragma once
 #include <string>
 
 class Product
 {
 private:
-    string category;
-    string name;
+    std::string category;
+    std::string name;
     int price;
     int stock;
 
 public:
-    Product(const string &category, const string &name, int price, int stock);
+    Product(const std::string &category, const std::string &name, int price, int stock);
     void increaseStock(int qty);
     void decreaseStock(int qty);
     void display() const;
