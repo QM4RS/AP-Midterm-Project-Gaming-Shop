@@ -14,4 +14,5 @@ public:
     void showCart() const;
     void chargeWallet(int amount);
     int getWalletBalance() const;
-    void clearC
+    void clearCart();
+};

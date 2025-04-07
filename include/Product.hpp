@@ -1,4 +1,4 @@
-using namespace std;
+#include <string>
 
 class Product
 {
@@ -14,8 +14,8 @@ public:
     void decreaseStock(int qty);
     void display() const;
 
-    string getCategory() const;
-    string getName() const;
+    std::string getCategory() const;
+    std::string getName() const;
     int getPrice() const;
     int getStock() const;
 
