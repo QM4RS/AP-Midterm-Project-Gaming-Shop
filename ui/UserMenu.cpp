@@ -114,3 +114,4 @@ void showWalletBalance(const User& user) {
     clear_screen();
     cout << "Wallet Balance: " << user.getWalletBalance() << "\n";
     wait(2);
+}

@@ -2,7 +2,6 @@
 #include "include/User.hpp"
 #include "include/Store.hpp"
 #include "include/UserMenu.hpp"
-#include "ui/WelcomeScreen.cpp" 
 #include <iostream>
 using namespace std;
 
@@ -80,7 +79,24 @@ int main() {
 
         int choice = get_int_input();
         if (choice == 1) userMenu(user);
-        else if (choice == 2) adminMenu();
+        else if (choice == 2) {
+            std::string pass;
+            clear_screen();
+            set_color(ConsoleColor::YELLOW);
+            std::cout << "Enter admin password: ";
+            reset_color();
+            std::cin >> pass;
+
+            if (pass == "admin1admin") {
+                adminMenu();
+            } else {
+                set_color(ConsoleColor::RED);
+                std::cout << "Incorrect password!\n";
+                reset_color();
+                wait(1);
+            }
+        }
+
         else if (choice == 3) {
             cout << "Goodbye!\n"; break;
         } else {

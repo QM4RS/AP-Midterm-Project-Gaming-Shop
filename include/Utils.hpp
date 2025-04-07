@@ -27,6 +27,8 @@ void reset_color();
 
 void clear_screen();
 
+void displayWelcomeScreen();
+
 void wait(int seconds);
 
 bool is_valid_int(const std::string& s);
