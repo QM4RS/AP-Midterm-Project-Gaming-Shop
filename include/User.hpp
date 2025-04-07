@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
-#include "include/CartItem.hpp"
-#include "include/Product.hpp"
+#include "CartItem.hpp"
+#include "Product.hpp"
 
 class User {
 private:

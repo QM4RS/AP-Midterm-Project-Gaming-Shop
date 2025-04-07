@@ -2,7 +2,7 @@
 #include "include/User.hpp"
 #include "include/Store.hpp"
 #include "include/UserMenu.hpp"
-#include "ui/WelcomeScreen.cpp" // فقط برای نمایش، در حالت واقعی بهتره تابع جدا بشه
+#include "ui/WelcomeScreen.cpp" 
 #include <iostream>
 using namespace std;
 
