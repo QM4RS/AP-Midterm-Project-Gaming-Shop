@@ -17,6 +17,7 @@ void reset_color() {
 
 void clear_screen() {
     system("cls");
+    displayWelcomeScreen();
 }
 
 void wait(int seconds) {
